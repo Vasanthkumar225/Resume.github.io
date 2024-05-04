@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+} 
+body{
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    ::selection{
+        background-color: rgb(184, 184, 184);
+        color: #066b9a;
+    }
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0,0.1);
+}
+.container .left{
+    position: relative;
+    background: #066b9a;
+    padding: 40px;
+}
+.container .right{
+    position: relative;
+    background:white;
+    padding: 40px;
+}
+.SK .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+.SK .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+.SK .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 00;
+    height: 100%;
+    background: #066b9a;
+    
+}
